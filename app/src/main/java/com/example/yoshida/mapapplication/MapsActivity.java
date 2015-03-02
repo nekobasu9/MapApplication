@@ -34,7 +34,12 @@ public class MapsActivity extends FragmentActivity {
     public static String posinfo = "";
     public static String info_A = "";
     public static String info_B = "";
+    public static  String test;
+    public static String testtest;
 
+
+    /*test
+*/
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -156,7 +161,7 @@ public class MapsActivity extends FragmentActivity {
             Log.d(data,data);
             br.close();
         }catch(Exception e) {
-            Log.d("Exception while downloading url", e.toString());
+            //Log.d("Exception while downloading url", e.toString());
         }finally{
             iStream.close();
             urlConnection.disconnect();
